@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".CreateAPlan"
+    tools:showIn="@layout/activity_create_aplan">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/dayPlanLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Create A Day Plan"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="36sp" />
+
+            <LinearLayout
+                android:id="@+id/personaTypeLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/userTypeTxtView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Choose which type of person that mostly represents you. This will help us create a more efficient plan. Click on the black info button below each option to learn more about each type."
+                    android:textColor="#000000"
+                    android:textSize="20sp" />
+
+                <RadioGroup
+                    android:id="@+id/personaTypeRadioGroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
+
+                    <RadioButton
+                        android:id="@+id/nightOwlRadio"
+                        android:layout_width="120dp"
+                        android:layout_height="40dp"
+                        android:layout_marginStart="55dp"
+                        android:background="@drawable/radio_persona_selector"
+                        android:button="@android:color/transparent"
+                        android:text="Night Owl"
+                        android:textAlignment="center"
+                        android:textColor="#000000"
+                        android:textSize="18sp" />
+
+                    <RadioButton
+                        android:id="@+id/earlyBirdRadio"
+                        android:layout_width="120dp"
+                        android:layout_height="40dp"
+                        android:layout_marginStart="220dp"
+                        android:layout_marginTop="-40dp"
+                        android:background="@drawable/radio_persona_selector2"
+                        android:button="@android:color/transparent"
+                        android:drawableStart="@android:drawable/screen_background_dark_transparent"
+                        android:text="Early Bird"
+                        android:textAlignment="center"
+                        android:textColor="#000000"
+                        android:textSize="18sp" />
+                </RadioGroup>
+
+                <Button
+                    android:id="@+id/nightOwlInfo"
+                    android:layout_width="66dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="93dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/ic_info_black_24dp" />
+
+                <Button
+                    android:id="@+id/earlyBirdInfo"
+                    android:layout_width="66dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="263dp"
+                    android:layout_marginTop="-49dp"
+                    android:background="@drawable/ic_info_black_24dp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Select the number of the activities/tasks that you intend to add to this plan:"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <Spinner
+                android:id="@+id/numOfTasks"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="70dp"
+                android:layout_marginTop="7dp" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:text="What is the date of the day you wish to start working the plan on ?"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/selectDateBtn"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="104dp"
+                android:text="Select A Date" />
+
+            <TextView
+                android:id="@+id/dateTextView"
+                android:layout_width="270dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="70dp"
+                android:text="There is no date selected"
+                android:textAlignment="center"
+                android:textColor="#000"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:id="@+id/mainLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"></LinearLayout>
+
+            <!--  <EditText
+                  android:id="@+id/activity1StartTime"
+                  android:layout_width="300dp"
+                  android:layout_height="50dp"
+                  android:ems="10"
+                  android:hint="Click to select the starting time"
+                  android:layout_marginStart="50dp"
+                  android:inputType="textPersonName"
+                  android:textSize="14sp" />
+                  -->
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

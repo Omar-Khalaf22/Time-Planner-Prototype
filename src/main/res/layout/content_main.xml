@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/activity_main">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/p1Constraint"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:clickable="false"
+        android:longClickable="false"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/p1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="19dp"
+            android:layout_marginTop="108dp"
+            android:layout_marginEnd="19dp"
+            android:layout_marginBottom="33dp"
+            android:background="#D51E09"
+            android:backgroundTint="#00C50D00"
+            android:text="Welcome to Time Planner! Here instead of you wasting time and energy trying to plan your days (pun intended), just drop the information and let the app do the rest!"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="34sp"
+            app:layout_constraintBottom_toTopOf="@+id/textView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/p1Btn"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="148dp"
+            android:alpha="1"
+            android:background="@android:color/transparent"
+            android:backgroundTintMode="screen"
+            android:onClick="nextBtn1"
+            android:text="Next"
+            android:textAlignment="center"
+            android:textColor="#06588F"
+            android:textSize="36sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView"
+            app:layout_constraintTop_toBottomOf="@+id/p1" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="208dp"
+            android:layout_marginEnd="31dp"
+            android:layout_marginBottom="148dp"
+            android:text="1"
+            android:textColor="#949191"
+            android:textSize="36sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/p1Btn"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/p1" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/p2Constraint"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="0dp"
+            android:layout_height="394dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="108dp"
+            android:layout_marginEnd="20dp"
+            android:text="After multiple researches, the app's algorithm will optomize your productive output of the day by planning critically."
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="36sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="20dp"
+            android:layout_height="49dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="32dp"
+            android:text="2"
+            android:textAlignment="center"
+            android:textSize="36sp"
+            app:layout_constraintEnd_toStartOf="@+id/p2Btn"
+            app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+        <Button
+            android:id="@+id/p2Btn"
+            android:layout_width="135dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="241dp"
+            android:background="@android:color/transparent"
+            android:onClick="nextBtn2"
+            android:text="Next"
+            android:textColor="#06588F"
+            android:textSize="36sp"
+            app:layout_constraintBottom_toBottomOf="@+id/textView5"
+            app:layout_constraintStart_toStartOf="@+id/textView4" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/p3Constraint"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/p3"
+            android:layout_width="0dp"
+            android:layout_height="394dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="108dp"
+            android:layout_marginEnd="20dp"
+            android:text="All what you need to do is to input the necessary information the app needs for the best output. This may take some time to set up, but once it is done, it will take less time for you to add plans. "
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="34sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="20dp"
+            android:layout_height="49dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="32dp"
+            android:text="3"
+            android:textAlignment="center"
+            android:textSize="36sp"
+            app:layout_constraintEnd_toStartOf="@+id/p3Btn"
+            app:layout_constraintTop_toBottomOf="@+id/p3" />
+
+        <Button
+            android:id="@+id/p3Btn"
+            android:layout_width="135dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="241dp"
+            android:background="@android:color/transparent"
+            android:onClick="nextBtn3"
+            android:text="Next"
+            android:textColor="#06588F"
+            android:textSize="36sp"
+            app:layout_constraintBottom_toBottomOf="@+id/textView6"
+            app:layout_constraintStart_toStartOf="@+id/p3" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/p4Constraint"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/p4"
+            android:layout_width="377dp"
+            android:layout_height="407dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="108dp"
+            android:layout_marginEnd="20dp"
+            android:text="Remember, the more information you add, the merier. Follow the next instructions to help you set up the app. Good Luck !"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="36sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="20dp"
+            android:layout_height="49dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="32dp"
+            android:text="4"
+            android:textAlignment="center"
+            android:textSize="36sp"
+            app:layout_constraintEnd_toStartOf="@+id/p4Btn"
+            app:layout_constraintTop_toBottomOf="@+id/p4" />
+
+        <Button
+            android:id="@+id/p4Btn"
+            android:layout_width="135dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="241dp"
+            android:background="@android:color/transparent"
+            android:onClick="nextBtn4"
+            android:text="Next"
+            android:textColor="#06588F"
+            android:textSize="36sp"
+            app:layout_constraintBottom_toBottomOf="@+id/textView7"
+            app:layout_constraintStart_toStartOf="@+id/p4" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/p5Constraint"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/p5TextView"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="29dp"
+            android:layout_marginTop="86dp"
+            android:layout_marginEnd="29dp"
+            android:text="This is your dashboard. Here you will find every plan you have created along with a progress bar."
+            android:textColor="#000000"
+            android:textSize="36sp"
+            app:layout_constraintBottom_toTopOf="@+id/p5button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/p5button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="205dp"
+            android:background="@android:color/transparent"
+            android:onClick="p1NextMethod"
+            android:text="Next"
+            android:textColor="#000F5C"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.088"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/p5TextView" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/p6Constraint"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/p6TextView"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="29dp"
+            android:layout_marginTop="86dp"
+            android:layout_marginEnd="29dp"
+            android:text="You have not created any plans yet. To create a plan, click on the button at the bottom right corner of your screen and fill the necessary information."
+            android:textColor="#000000"
+            android:textSize="33sp"
+            app:layout_constraintBottom_toTopOf="@+id/p6button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/p6button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="31dp"
+            android:layout_marginEnd="44dp"
+            android:layout_marginBottom="202dp"
+            android:background="@android:color/transparent"
+            android:onClick="closeTutorial"
+            android:text="Close"
+            android:textColor="#000F5C"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/imageView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/p6TextView" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="0dp"
+            android:layout_height="152dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="44dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/p6button"
+            app:layout_constraintTop_toBottomOf="@+id/p6TextView"
+            app:srcCompat="@drawable/smallarrow" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
