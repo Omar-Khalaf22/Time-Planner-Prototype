@@ -3,3 +3,9 @@ This is the (unfinished) code of an app that creates to the user his/her own per
 
 -Programming Languages used in the production of this app: Java (main language), XML(a language extremley cimilar to CSS for design), and some SQL to save permanent information into the phone's local memory
 
+***Description of the files so you can know what you're looking at***
+There are **2 main directories** in this repository that you need to be aware of:
+1- Location: **"src/main/java/com/ued/timeplanner/"**  ===>To access the java files
+2- Location: **"src/main/res/layout/"**   ====>To access the xml files for the app's layout
+
+1- **Java Files:**
